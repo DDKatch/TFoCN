@@ -9,13 +9,9 @@ while true
     pack = com2.read(16)
     if pack.empty?; sleep(1) 
 	else 
-		#p pack
 		bmsg = str_to_str_of_bits pack
-		#p bmsg
 		bmsg = rebitstuff bmsg
-		#p dfp
 		pack = show_pack bmsg
-		p pack
 	end
 end
 
